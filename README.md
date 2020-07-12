@@ -10,8 +10,7 @@ Primary goal was to, as mentioned, demonstrate the ability to explain a difficul
 
 ### Serverless Computing
 
-dynamic *The rise of serverless infrastructure hugely simplified the process of deploying code into production scaling, capacity planning or maintenance.* Functions on major csp. [Here](https://blog.timescale.com/blog/using-aws-lambda-with-timescale-cloud-for-iot-data/) is an example of how Amazon's serverless offering, AWS Lambda, can be used with TimescaleDB to ingest
-and store IoT data.
+Serverless platforms allow for the dynamic deployment of production code, and are automatically scaled, managed, and maintained by cloud service providers on a pool of infrastucture. Utilizing these services can allow developers to focus on building the best code possible without having to worry about administration, and can provide cost saving as well, as charges only occur when the code is run and is often billed by the milliseconds. Infrastucture is deployed and charges are incured often by code written as *functions*, so many clouds (Azure Functions, Google Cloud Functions) offer their serverless platform with that name. The most popular, however, is provided by Amazon and called AWS Lambda. [Here](https://blog.timescale.com/blog/using-aws-lambda-with-timescale-cloud-for-iot-data/) is an example AWS Lambda can be used with TimescaleDB to ingest and store IoT data.
 
 ### Serverless Databases
 
