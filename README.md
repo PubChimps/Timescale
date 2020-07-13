@@ -2,10 +2,17 @@
 
 The growth of cloud computing has been comprised of many, separate trends. A set of relatively new cloud services have formed via the intersection of two such trends: cloud databases and serverless computing. [Gartner](https://www.gartner.com/en/newsroom/press-releases/2019-07-01-gartner-says-the-future-of-the-database-market-is-the) has said that in two years, 3 out of every 4 databases will run on a cloud. Flexera's State of the Cloud ranked serverless computing as the fastest growing cloud service in [2018](https://www.suse.com/media/report/rightscale_2018_state_of_the_cloud_report.pdf) and the fourth highest in [2020](https://info.flexera.com/SLO-CM-REPORT-State-of-the-Cloud-2020), already being more widely used than popular workloads such as IoT and Machine Learning (it is also worth noting that Relational Databases as a Service were the highest used cloud services in both reports). Together, these make up the world of serverless databases, this article will introduce both serverless computing and serverless databasing concepts, and let you know how you can get started with your own instance!
 
+|![299769BD-38FB-491C-AC9D-82F93F00D1C7.jpeg](https://github.com/PubChimps/Timescale/blob/master/images/299769BD-38FB-491C-AC9D-82F93F00D1C7.jpeg?raw=true) |  
+|:--:| 
+| *Flexera's State of the Cloud in both 2018 (left) and 2020 show the wide adoption of cloud databases and the growth of serverless technologies* |
 
 ### Serverless Computing
 
 Serverless platforms allow for the dynamic deployment of production code, and are automatically scaled, managed, and maintained by cloud service providers on a pool of infrastucture. Utilizing these services can allow developers to focus on building the best code possible without having to worry about administration, and can provide cost saving as well, as charges only occur when the code is run and is often billed by the second or milliseconds. Infrastucture is deployed and charges are incured often by code written as *functions*, so many clouds (Azure Functions, Google Cloud Functions) offer their serverless platform with that name. The most popular, however, is provided by Amazon and called AWS Lambda. [Here](https://blog.timescale.com/blog/using-aws-lambda-with-timescale-cloud-for-iot-data/) is an example AWS Lambda can be used with TimescaleDB to ingest and store IoT data.
+
+|![78231136-1E62-444A-8B72-3779D1D1F752.png](https://github.com/PubChimps/Timescale/blob/master/images/78231136-1E62-444A-8B72-3779D1D1F752.png?raw=true) |  
+|:--:| 
+| *[Taken from GCP](https://medium.com/google-cloud/serverless-on-google-cloud-platform-an-introduction-with-serverless-store-demo-41992dec085), less time spent on managing deployments and more can be spent on builind applications * |
 
 ### Serverless Databases
 
@@ -13,7 +20,11 @@ Many cloud database providers are taking advantage of the benefits described abo
 
 ### How to get started
 
-The serverless databases mentioned above have migration documention to get started in their serverless enivronment. If you are questioning whether or not your data environment could benefit from a move to serverless, ask us on Slack. Just like other cloud services, these databases will need to be monitored when they are deployed and used. For more information check out the Timescale Tutorial [Monitoring ang Logging AWS Serverless Applications with Cloudwatch, Prometheus, and TimescaleDB](https://github.com/PubChimps/Timescale/edit/master/README.md).
+The serverless databases mentioned above have migration documention to get started in their serverless enivronment. If you are questioning whether or not your data environment could benefit from a move to serverless, ask us on Slack. Just like other cloud services, these databases will need to be monitored when they are deployed and used. For more information check out the Timescale Tutorial [Monitoring ang Logging AWS Serverless Applications with CloudWatch, Prometheus, and TimescaleDB](https://github.com/PubChimps/Timescale/edit/master/README.md).
+
+|![87364E64-A0F7-4154-B6DB-6535F83138B0.png](https://github.com/PubChimps/Timescale/blob/master/images/87364E64-A0F7-4154-B6DB-6535F83138B0.png?raw=true) |  
+|:--:| 
+| *The path from AWS Serverless applications to Prometheus is through AWS CloudWatch, as [sysdig](https://sysdig.com/blog/monitor-aws-fargate-prometheus/#the-rise-of-serverless) demonstrate * |
 
 ### Summary
 
